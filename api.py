@@ -3,6 +3,7 @@
 from flask import Flask,send_file
 import datetime
 import json
+config = json.load(open("config.json"))
 app=Flask(__name__)
 
 
@@ -45,4 +46,4 @@ def main():
 
 
 
-app.run(host='114.204.175.211',port=2018);
+app.run(host=config.host,port=config.port);
