@@ -17,7 +17,8 @@ def get_time():
 
 @app.route('/global_notice.html')
 def gnotice():
-    return "오늘의 날짜는.."
+    now = datetime.datetime.now()
+    return f"지금은 {now.year}년 {now.month}월 {now.day}일 {now.hour}시 {now.minute}분입니다. 오차가 있을 수 있습니다."
 
 
 
