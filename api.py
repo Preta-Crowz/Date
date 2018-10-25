@@ -46,4 +46,4 @@ def main():
 
 
 
-app.run(host=config[host],port=config[port]);
+app.run(host=config["host"],port=config["port"]);
